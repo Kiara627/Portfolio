@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,39 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kiara Jamal | Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Kiara Jamal</h1>
-    <p>MS in Data Science @ Pace University | NYC</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="hero">
+    <img src="profile.jpg" alt="Kiara Jamal" class="profile-pic" />
+    <div class="hero-text">
+      <h1>Kiara Jamal</h1>
+      <p>MS in Data Science @ Pace University | NYC</p>
+      <p class="tagline">Aspiring Data Scientist passionate about ML, analytics, and creativity!</p>
+    </div>
   </header>
+
+  <nav class="nav">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m currently pursuing my Master’s in Data Science at Pace University with a background in Computer Engineering from India. I enjoy building data-driven solutions that combine analytics, machine learning, and real-world insights.</p>
+    <p>Hi! I’m currently pursuing my Master’s in Data Science at Pace University. With a background in Computer Engineering from India, I enjoy solving problems through data, machine learning, and visualization. I’m also a passionate canvas painter and love baking in my free time!</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Python</li>
+      <li>SQL</li>
+      <li>Java</li>
+      <li>HTML/CSS</li>
+      <li>Data Analytics</li>
+      <li>Machine Learning</li>
+    </ul>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
       <h3>📊 Personal Finance Management System</h3>
-      <p>Forecasted expenses using k-means clustering and ARIMA with 85% accuracy. Designed personalized budgeting tools improving user savings by 20%.</p>
+      <p>Forecasted expenses with 85% accuracy using k-means clustering and ARIMA. Designed personalized budgeting tools that improved user savings by 20%.</p>
+      <a href="https://github.com/Kiara627" target="_blank">GitHub Repo</a>
     </div>
     <div class="project">
       <h3>🧠 Real-Time Face Attendance System</h3>
-      <p>Used Enhanced LBP and PCA to build a facial recognition system achieving 95.76% accuracy on the Yale dataset and 100% on high-quality custom images.</p>
+      <p>Developed using Enhanced LBP and PCA, achieving 95.76% accuracy on Yale dataset and 100% on custom images.</p>
+      <a href="https://github.com/Kiara627" target="_blank">GitHub Repo</a>
     </div>
   </section>
 
   <section id="resume">
     <h2>Resume</h2>
-    <a href="Kiara_Jamal_Resume.pdf" download>📄 Download My Resume</a>
+    <iframe src="Kiara_Jamal_Resume.pdf" width="100%" height="500px" style="border:1px solid #ccc;"></iframe>
+    <p><a href="Kiara_Jamal_Resume.pdf" download>📄 Download My Resume</a></p>
   </section>
 
   <section id="contact">
@@ -47,6 +70,12 @@
       <li>LinkedIn: <a href="http://linkedin.com/in/kiara-jamal" target="_blank">linkedin.com/in/kiara-jamal</a></li>
       <li>GitHub: <a href="https://github.com/Kiara627" target="_blank">github.com/Kiara627</a></li>
     </ul>
+    <form action="https://formspree.io/f/mknldpjv" method="POST">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="_replyto" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
